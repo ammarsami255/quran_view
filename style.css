@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;1000&display=swap');
 
 * {
-    padding: 0;
+    padding: 0px;
     margin: 0;
     box-sizing: border-box;
     outline: none;
@@ -113,9 +113,9 @@ body {
 .surahs>div {
     color: #23162f;
     background-color: #fff;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 00 4px rgba(0, 0, 0, 0.4);
     font-weight: bold;
-    width: calc(100% - 90px);
+    width: calc(100% -90px);
     transition: .3s color ease;
     cursor: pointer;
     margin-bottom: 10px;
@@ -126,7 +126,7 @@ body {
 }
 
 .surahs>div::after {
-    content: counter(surah-counter);
+    content: counter (surah-counter);
     position: absolute;
     height: 80px;
     width: 80px;
@@ -158,51 +158,4 @@ body {
     color: #fff;
 }
 
-/*Tablets*/
-@media (min-width: 768px) and (max-width: 1023px) {
-    .quran_view_pdf {
-        font-size: 1.3rem;
-        padding: 1rem 1.5rem;
-    }
-
-    .countainer {
-        padding: 0 10px;
-    }
-
-    .surahs>div {
-        width: calc(100% - 60px);
-        padding: 10px 15px;
-    }
-
-    .surahs>div::after {
-        left: -60px;
-        height: 60px;
-        width: 60px;
-        font-size: 20px;
-        line-height: 60px;
-    }
-}
-/*phone*/
-@media (max-width: 767px) {
-    .quran_view_pdf {
-        font-size: 1rem;
-        padding: 0.8rem 1rem;
-    }
-
-    .countainer {
-        padding: 0 5px;
-    }
-
-    .surahs>div {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .surahs>div::after {
-        left: -40px;
-        height: 40px;
-        width: 40px;
-        font-size: 15px;
-        line-height: 40px;
-    }
-}
+/* Add more media queries as needed for different screen sizes */
