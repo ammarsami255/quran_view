@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <!--  <link rel="stylesheet" href="style.css">-->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .pdf-container {
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .pdf-iframe {
+            width: 100%;
+            height: 80vh;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <div class ="pdf-container">
-    <iframe src="Quran25.pdf#zoom=125" frameborder="0" class="pdf-iframe"></iframe>
-
+    <div class="pdf-container">
+        <iframe src="Quran25.pdf#zoom=125" class="pdf-iframe"></iframe>
     </div>
 </body>
 </html>
